@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+void show(int x=10) {
+    cout<<"value"<< x <<endl;
+
+}
+
+int main(){
+    show();
+    show(25);
+    return 0;
+}
