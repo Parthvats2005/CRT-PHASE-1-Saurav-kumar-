@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+void displaySum(int a, int b) {
+    cout << "Sum: " << a + b << endl;
+}
+
+int main() {
+    displaySum(5, 7);  // function call
+    return 0;
+}
