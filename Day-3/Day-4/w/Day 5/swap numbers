@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void swapnumbers (int *a, int*b){
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+int main(){
+    int x,y;
+
+    cout<<"Enter two numbers:"<<endl;
+    cin>>x>>Y;
+
+    swapnumbers(&x,&y);
+    cout<<"after swapping"<<endl;
+    cout<<"x="<<X<<"y="<<y<<endl;
+
+    return 0;
+}
