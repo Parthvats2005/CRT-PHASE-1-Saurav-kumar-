@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+intcalculatevolume(int shots){
+    return shots*30;
+}
+
+int main(){
+    int shots;
+
+
+cout<<"Enter number of coffee shots:"<<endl;
+cin>>shots;
+
+int volume = calculatevolume(shots);
+
+cout<<"Total volume coffee used:" <<volume<<"ml"<<endl;
+
+return 0;
+
+}
