@@ -1,0 +1,67 @@
+#include<iostream>
+using namespace std;
+
+class student
+{
+    private
+    string name;
+    int rollnumber;
+    float marks;
+    int enrollmentnumber;
+    static int sequence;
+
+
+public:
+
+student()
+{
+    sequence++;
+    enrollmentnumber=sequence;
+}
+
+void getdata()
+{
+cout<<"Enter student name"<<endl;
+cin>>name;
+
+cout<<"Enter roll number"<<endl;
+cin>>rollnumber;
+
+cout<<"Enter marks"<<endl;
+cin>>marks;
+}
+
+void displaydata()
+{
+
+cout<<"/nstudent details"<<endl;
+
+cout<<"enrollment number"<<enrollmentnumber<<endl;
+
+cout<<"student name"<<name<<endl;
+
+cout<<"marks"<<marks<<endl;
+
+cout<<"roll number"<<rollnumber<<endl;
+}
+};
+
+int student::sequence = 1000
+int main()
+{
+    // Creating objects
+    Student s1, s2;
+
+    cout << "Enter details for Student 1" << endl;
+    s1.getData();
+
+    cout << "\nEnter details for Student 2" << endl;
+    s2.getData();
+
+    // Displaying details
+    s1.displayData();
+    s2.displayData();
+
+    return 0;
+}
+
