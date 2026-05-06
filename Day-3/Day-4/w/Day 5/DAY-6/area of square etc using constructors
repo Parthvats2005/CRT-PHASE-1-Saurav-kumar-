@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+class Area
+{
+private:
+    float area;
+
+public:
+    // Constructor for Circle
+    Area(float radius)
+    {
+        if (radius <= 0)
+            area = 0;
+        else
+            area = 3.14 * radius * radius;
+
+        cout << "Area of Circle: " << area << endl;
+    }
+
+    // Constructor for Rectangle
+    Area(float length, float width)
+    {
+        if (length <= 0 || width <= 0)
+            area = 0;
+        else
+            area = length * width;
+
+        cout << "Area of Rectangle: " << area << endl;
+    }
+
+    // Constructor for Square
+    Area(int side)
+    {
+        if (side <= 0)
+            area = 0;
+        else
+            area = side * side;
+
+        cout << "Area of Square: " << area << endl;
+    }
+};
+
+int main()
+{
+    float r, l, w;
+    int s;
+
+    cout << "Enter radius of circle: ";
+    cin >> r;
+    Area c(r);
+
+    cout << "\nEnter length and width of rectangle: ";
+    cin >> l >> w;
+    Area rec(l, w);
+
+    cout << "\nEnter side of square: ";
+    cin >> s;
+    Area sq(s);
+
+    return 0;
+}
