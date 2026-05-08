@@ -1,0 +1,47 @@
+#include<iostream>
+
+using namespace std;
+
+class ATM{
+    private:
+    int balance;
+    public:
+
+    void withdraw(int amount){
+        if(amount>balance){
+            cout<<"insufficient balance"<<endl;
+        }
+        else
+        {
+            balance-=amount;
+            cout<<"amount withdrawn"<<amount<<endl;
+        }
+    }
+    void showBalance()
+    {
+        cout<<"current balance"<<balance<<endl;
+    }
+};
+
+int main()
+{
+    ATM a(5000);
+    a.showBalance();
+    a.Withdraw(500);
+    a.showBalance();
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
